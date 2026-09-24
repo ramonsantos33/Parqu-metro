@@ -57,7 +57,7 @@ Quer ver o parquímetro funcionando na prática?
 
 A aplicação está publicada no GitHub Pages e pode ser testada diretamente pelo navegador.
 
-👉 Clique aqui para testar o Parquímetro(https://ramonsantos33.github.io/Parqu-metro/)
+[🅿️ Clique aqui para testar o Parquímetro]https://ramonsantos33.github.io/Parqu-metro/
 
 ### 🧪 Sugestões de teste
 
