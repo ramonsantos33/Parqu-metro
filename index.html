@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parquímetro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <span class="app__tag">ESTACIONAMENTO</span>
+        <h1>Parquímetro</h1>
+        <p>
+          Informe o valor disponível e descubra seu tempo de estacionamento.
+        </p>
+      </header>
+
+      <section class="calculator" aria-labelledby="titulo-calculadora">
+        <div class="calculator__top">
+          <div>
+            <span class="section-label">CALCULADORA</span>
+            <h2 id="titulo-calculadora">Quanto tempo você tem?</h2>
+          </div>
+          <span class="status-dot" aria-label="Sistema disponível"></span>
+        </div>
+
+        <label for="valor" class="field-label">Valor para estacionar</label>
+        <div class="input-box" id="inputBox">
+          <span>R$</span>
+          <input
+            id="valor"
+            type="text"
+            inputmode="decimal"
+            placeholder="0,00"
+            autocomplete="off"
+          />
+        </div>
+        <p class="input-help">Digite um valor a partir de R$ 1,00. Ex.: 1,75</p>
+
+        <button type="button" id="calcular" class="calculate-button">
+          Calcular tempo
+        </button>
+
+        <div id="resultado" class="result" hidden aria-live="polite"></div>
+      </section>
+
+      <section class="prices" aria-labelledby="titulo-tarifas">
+        <div class="prices__header">
+          <span class="section-label">TARIFAS</span>
+          <h2 id="titulo-tarifas">Valores disponíveis</h2>
+        </div>
+
+        <div class="price-grid">
+          <button type="button" class="price-card" data-valor="1.00">
+            <span class="price">R$ 1,00</span>
+            <span class="time">30 min</span>
+          </button>
+          <button type="button" class="price-card" data-valor="1.75">
+            <span class="price">R$ 1,75</span>
+            <span class="time">60 min</span>
+          </button>
+          <button type="button" class="price-card" data-valor="3.00">
+            <span class="price">R$ 3,00</span>
+            <span class="time">120 min</span>
+          </button>
+        </div>
+      </section>
+
+      <p class="note">Tempo máximo permitido: 120 minutos.</p>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
