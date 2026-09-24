@@ -60,3 +60,24 @@ Para isso, foi criada a classe:
 class Parquimetro {
   // regras do estacionamento
 }
+
+## 🚀 Teste o projeto
+
+Quer ver o parquímetro funcionando na prática?
+
+A aplicação está publicada no GitHub Pages e pode ser testada diretamente pelo navegador.
+
+👉 [Clique aqui para testar o Parquímetro](https://ramonsantos33.github.io/Parqu-metro/)
+
+### 🧪 Sugestões de teste
+
+Você pode experimentar alguns valores para verificar o funcionamento da aplicação:
+
+- `R$ 0,50` → valor insuficiente
+- `R$ 1,00` → 30 minutos
+- `R$ 1,50` → 30 minutos + troco
+- `R$ 1,75` → 60 minutos
+- `R$ 2,00` → 60 minutos + troco
+- `R$ 3,00` → 120 minutos
+
+A aplicação calcula automaticamente o tempo disponível para estacionamento e informa o troco quando necessário.
